@@ -35,7 +35,9 @@ const InputBox = ({
           disabled={currencyDisable}
         >
           {currencyOptions.map((currency) => {
-            <option key={currency} value="usd"></option>;
+            <option key={currency} value={currency}>
+              {currency}
+            </option>;
           })}
         </select>
       </div>
